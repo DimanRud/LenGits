@@ -221,6 +221,14 @@
   a {
     font-size: 14px;
   }
+
+  .form__social-blocks {
+    display: none;
+  }
+
+  .form__section .form__items .form__item {
+    width: 100%;
+  }
 }
 
 @media (max-width: 1001px) {
