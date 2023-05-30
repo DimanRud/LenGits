@@ -34,6 +34,8 @@
   }
 }
 
+
+
 @media (max-width: 1446px) {
   .container {
     max-width: 1406px;
@@ -48,6 +50,26 @@
   }
 
 }
+
+@media (max-width: 1366px) {
+  .container {
+    max-width: 1233px;
+  }
+
+  .services .services__blocks {
+    column-gap: 58px;
+  }
+
+  .nav__item-serv .nav__serv-wrapp {
+    gap: 175px;
+  }
+
+  .nav__item-serv .serv-wr {
+    gap: 280px;
+  }
+}
+
+
 
 @media (max-width: 1196px) {
   .container {

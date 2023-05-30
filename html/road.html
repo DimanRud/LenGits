@@ -1149,24 +1149,26 @@
         </div>
       </div>
     </section>
-    <section class="form" id="form">
+    <section class="form__section">
       <div class="container">
         <h1 class="form__title title">СВЯЖИТЕСЬ С НАМИ <br> <span class="title-color form-color">ПРЯМО СЕЙЧАС</span>
         </h1>
         <div class="form__items">
-          <div class="form__item">
+          <form id="form" class="form_block form__item form_fit">
             <div class="form__row">
-              <input type="text" placeholder="Ваше имя" class="form__input">
-              <input type="text" placeholder="+7 (_ _ _) _ _ _ – _ _ – _ _" class="form__input">
-              <input type="text" placeholder="E-mail" class="form__input">
+              <input type="text" name="name" id="name" placeholder="Ваше имя" class="form__input _req">
+              <input type="text" id="phone" name="phone" placeholder="+7 (_ _ _) _ _ _ – _ _ – _ _"
+                class="form__input _req">
+              <input type="text" id="email" name="email" placeholder="E-mail" class="form__input _req _email">
             </div>
             <div class="form__row">
-              <textarea class="form__input form__input--textarea" placeholder="Оставьте Ваш комментарий"></textarea>
+              <textarea name="message" class="form__input form__input--textarea"
+                placeholder="Оставьте Ваш комментарий"></textarea>
             </div>
             <div class="form__btn">
-              <button class="btn">Отправить</button>
+              <button type="submit" class="btn">Отправить</button>
             </div>
-          </div>
+          </form>
           <div class="form__social">
             <div class="form__social-blocks">
               <div class="form__social-block">
@@ -1269,7 +1271,7 @@
     <div id="popup_2" class="popup">
       <div class="popup__body">
 
-        <div class="popup__content">
+        <form action="#" id="form_2" class="popup__content">
           <a href="#header" class="popup__close close-popup">
             <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="../img/sprite.svg#pl"></use>
@@ -1281,13 +1283,12 @@
             <div class="popup__form-row">
 
 
-                <input type="text" placeholder="Ваше имя" class="popup__input" id="name">
-                <input type="text" placeholder="+7 (_ _ _) _ _ _ – _ _ – _ _" class="popup__input">
-                <input type="text" placeholder="E-mail" class="popup__input">
+              <input type="text" name="name" placeholder="Ваше имя" class="popup__input _val" id="name">
+              <input type="text" name="phone" placeholder="+7 (_ _ _) _ _ _ – _ _ – _ _" class="popup__input _val">
+              <input type="text" name="email" placeholder="E-mail" class="popup__input _val _email-2">
 
 
-                <textarea class="popup__input--textarea"
-                  placeholder="Оставьте Ваш комментарий"></textarea>
+              <textarea name="message" class="popup__input--textarea" placeholder="Оставьте Ваш комментарий"></textarea>
 
 
 
@@ -1299,19 +1300,19 @@
               </label>
             </div>
             <div class="popup__btn">
-              <button class="btn">Отправить</button>
+              <button type="submit" class="btn">Отправить</button>
             </div>
           </div>
           <div class="popup__subtitle">Или Позвоните нам</div>
           <a class="popup__line-phone" href="tel:+7 (939) 715-43-71">
             <span class="popup__line-icon">
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="../img/sprite.svg#ph"></use>
+                <use xlink:href="./img/sprite.svg#ph"></use>
               </svg>
             </span>
             <span class="popup__line-text text__phone">+7 (939) 715-43-71</span>
           </a>
-        </div>
+        </form>
       </div>
     </div>
   </div>
@@ -1320,6 +1321,7 @@
   <script src="../js/swiper-bundle.min.js"></script>
   <script src="../js/faq.js"></script>
   <script src="../js/popup.js"></script>
+  <script src="../js/form_2.js"></script>
   <script src="../js/script.js"></script>
 </body>
 

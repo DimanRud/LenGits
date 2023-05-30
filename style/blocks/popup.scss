@@ -87,8 +87,11 @@
   &:focus {
     outline: none;
   }
-}
 
+}
+.popup__input._error {
+    border: 1px solid #F75C53;
+  }
 .popup__check {
   position: absolute;
   opacity: 0;
@@ -132,7 +135,7 @@
   color: #93AA00;
 }
 
-.popup__label._error .popup__t::before {
+.popup__check._error .popup__t::before {
   border: 1px solid #F75C53;
 }
 
