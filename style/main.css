@@ -2206,6 +2206,8 @@ body._touch .nav__menu-item._active .menu__arrow {
 
 .variation {
   margin-top: 100px;
+  background-color: rgba(0, 139, 139, 0.2);
+  padding: 30px 0;
 }
 .variation .variation__wrapp {
   display: -webkit-box;
@@ -2218,8 +2220,8 @@ body._touch .nav__menu-item._active .menu__arrow {
   gap: 20px;
 }
 .variation .variation__wrapp .variation__content {
-  border: 1px solid #272727;
-  border-radius: 20px;
+  border-top: 1px solid #008B8B;
+  border-bottom: 1px solid #008B8B;
   padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3547,7 +3549,6 @@ body._touch .nav__menu-item._active .menu__arrow {
 
 .userful-bl {
   display: block;
-  width: 100%;
 }
 
 .block__tabs {
